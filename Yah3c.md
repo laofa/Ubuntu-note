@@ -1,0 +1,27 @@
+# 中山大学东校区校园网认证的客户端
+## 安装ｇｉｔ->获取源->安装
+```
+sudo apt-get install git
+
+git clone git://github.com/humiaozuzu/YaH3C.git
+
+cd YaH3C
+sudo python setup.py install
+```
+这里需要注意的是安装的全程需要在python２，因为这个客户端使用python2写的，Ubuntu的python版本切换在我的另一个笔记有。
+## 配置文件
+setup.py执行完成后你可以找到/etc/yah3c.conf文件，把文件按照下面的要求修改
+```
+sudo gedit ~/etc/yah3c.conf #找不到就手动找到文件然后用ｇｅｄｉｔ打开
+```
+```
+wufm3　                    # 你的帐户 
+password = 123456          # 密码
+ethernet_interface = eth0  # 使用的网卡，默认为eth0
+dhcp_command = dhcpcd      # 验证成功后使用的dhcp命令(dhcpcd/dhclient)，默认为空
+daemon = True              # 验证成功后是否变成daemon进程，默认为是
+```
+## 认证
+```
+sudo yah3c
+```
