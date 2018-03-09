@@ -12,7 +12,7 @@ sudo python setup.py install
 ## 配置文件
 setup.py执行完成后你可以找到/etc/yah3c.conf文件，把文件按照下面的要求修改
 ```
-sudo gedit ~/etc/yah3c.conf #找不到就手动找到文件然后用ｇｅｄｉｔ打开
+sudo gedit /etc/yah3c.conf #找不到就手动找到文件然后用ｇｅｄｉｔ打开
 ```
 ```
 wufm3　                    # 你的帐户 
