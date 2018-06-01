@@ -73,6 +73,16 @@ $ git merge dev
 
 ### 9.推送分支
 ```
+// 添加本地索引
+$ git add *
+
+// 添加提交日志 
+$ git commit -m "注释" 
+
+// 若没有配置远程仓库用户名与密码，push代码时会让输入用户名与密码，成功后将会出现如下信息，可使用git config 命令配置
+$ git config --global user.email "1005914544@qq.com"
+$ git config --global user.name "laofa"
+
 // git push的一般形式为 git push <远程主机名> <本地分支名> : <远程分支名> 
 $ git push origin master:master
 
