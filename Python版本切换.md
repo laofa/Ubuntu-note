@@ -1,4 +1,4 @@
-# Ubuntu的Python默认版本切换
+# Ubuntu系统的Python默认版本切换
 ## 命令
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100   
